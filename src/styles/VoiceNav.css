@@ -1,0 +1,231 @@
+.voice-nav-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    font-family: 'DM Sans', sans-serif;
+    /* Setup meaningful font if available */
+}
+
+/* Main Button */
+.voice-btn {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(20, 20, 30, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-btn:hover {
+    transform: scale(1.1);
+    background: rgba(30, 30, 50, 0.95);
+    box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
+}
+
+/* Active Listening State */
+.voice-btn.listening {
+    background: #ff4757;
+    border-color: #ff6b81;
+    box-shadow: 0 0 25px rgba(255, 71, 87, 0.6);
+    animation: ripple 1.5s infinite;
+}
+
+/* Always On Mode - Premium Green/Blue Glow */
+.voice-btn.always-on-active {
+    background: linear-gradient(135deg, #00b894, #00cec9);
+    border-color: #55efc4;
+    box-shadow: 0 0 30px rgba(0, 206, 201, 0.6);
+    animation: breathe 2s infinite alternate;
+}
+
+/* Settings Button */
+.voice-settings-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.voice-settings-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: rotate(90deg);
+}
+
+/* Feedback Box */
+.voice-feedback {
+    background: rgba(15, 15, 20, 0.9);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 16px;
+    min-width: 200px;
+    max-width: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #00b894;
+    /* Accent line */
+    backdrop-filter: blur(16px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    pointer-events: none;
+    /* Let clicks pass through if it covers content */
+}
+
+/* Pulsing Feedback for Always On */
+.voice-feedback.pulsing {
+    border-color: #00b894;
+    box-shadow: 0 0 20px rgba(0, 184, 148, 0.2);
+}
+
+.status-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    animation: bounce 2s infinite;
+}
+
+.status-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.transcript-text {
+    font-size: 0.9rem;
+    color: #a4b0be;
+    font-style: italic;
+    line-height: 1.4;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Settings Panel */
+.voice-settings {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    width: 320px;
+    background: rgba(20, 20, 25, 0.95);
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    backdrop-filter: blur(20px);
+    z-index: 1001;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transform-origin: bottom right;
+    animation: scaleIn 0.3s ease;
+}
+
+.voice-settings h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #00cec9;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+/* Animations */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 71, 87, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+    }
+}
+
+@keyframes breathe {
+    from {
+        box-shadow: 0 0 15px rgba(0, 206, 201, 0.4);
+        transform: scale(1);
+    }
+
+    to {
+        box-shadow: 0 0 30px rgba(0, 206, 201, 0.7);
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .voice-nav-container {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .voice-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 1.2rem;
+    }
+}

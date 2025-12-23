@@ -1,0 +1,153 @@
+/* 🌈 Common Section Style */
+.github-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 60px 10%;
+  overflow: hidden;
+}
+
+/* 🔹 Contribution Section Background */
+.contrib-section {
+  background: linear-gradient(135deg, #0d0b33, #110044, #000000);
+  animation: fadeIn 1s ease;
+}
+
+/* 🔸 Stats Section Background */
+.stats-section {
+  background: linear-gradient(135deg, #000428, #004e92, #001a33);
+  animation: fadeIn 1s ease;
+}
+
+/* 🧱 Container */
+.github-container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* 📊 Stats Grid Layout */
+.github-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✨ Title */
+.github-title {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00ffff, #ff00cc, #00ff6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+/* 📦 Card */
+.github-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  transition: 0.4s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+/* 🖼️ Images */
+.github-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  /* margin: 20px auto; removed auto margin for better flex centering */
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  transition: 0.4s;
+}
+
+.github-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(255, 0, 255, 0.4);
+}
+
+/* 🌐 GitHub Button */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #ff00cc, #00ffff);
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff00cc;
+}
+
+/* 🌟 Animations */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff00cc, 0 0 25px #00ffff;
+  }
+
+  100% {
+    text-shadow: 0 0 25px #00ffea, 0 0 40px #ff00cc;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .github-title {
+    font-size: 2rem;
+  }
+
+  .github-card {
+    padding: 25px 15px;
+  }
+
+  .github-stats-grid {
+    grid-template-columns: 1fr;
+    /* Stack on mobile */
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+}
