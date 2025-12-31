@@ -14,7 +14,7 @@ export default function Projects() {
       title: "Soul Connection",
       desc: "A full-stack matchmaking web application that helps users find compatible partners based on their preferences. It includes both frontend and backend integration.",
       tech: "React, Node.js, Express.js, MongoDB (Full Stack Application)",
-      github: "https://github.com/tilak76/soulconnection",
+      github: "https://github.com/tilak76/matchMekarme",
       netlify: "https://soulcoonection.netlify.app",
       img: matchme
     },
