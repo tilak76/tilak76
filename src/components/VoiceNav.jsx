@@ -160,8 +160,16 @@ const VoiceNav = () => {
                 speak("Contact Me.");
                 break;
             case "resume":
-                window.open("https://drive.google.com/file/d/1J8UB7G6KX1cVWL4d_mGT6bEdwrU5pVHC/view", "_blank");
-                speak("Resume.");
+                window.open("https://drive.google.com/file/d/1ziN_MoIYEVp5ZlBtsuJBdVCNA5y3hnKQ/view", "_blank");
+
+                const link = document.createElement('a');
+                link.href = "https://drive.google.com/uc?export=download&id=1ziN_MoIYEVp5ZlBtsuJBdVCNA5y3hnKQ";
+                link.download = 'Tilak_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                speak("Downloading Resume.");
                 break;
             case "time":
                 speak(new Date().toLocaleTimeString());

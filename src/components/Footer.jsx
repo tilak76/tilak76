@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="footer-section">
-      <p>© 2025 Tilak Kumar Mishra | All Rights Reserved</p>
+      <p>© 2025 Tilak Kumar Mishra |contact me| All Rights Reserved</p>
       <button className="scroll-top-btn" onClick={scrollToTop}>
         ⬆️ Top
       </button>

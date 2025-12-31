@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./../styles/Home.css";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import image from "../assets/tilak.jpeg";
+import image from "../assets/profile_new.jpg";
 
 export default function Home() {
-  const fileId = "1J8UB7G6KX1cVWL4d_mGT6bEdwrU5pVHC";
+  const fileId = "1ziN_MoIYEVp5ZlBtsuJBdVCNA5y3hnKQ";
 
   const handleResumeClick = () => {
     window.open(`https://drive.google.com/file/d/${fileId}/view`, "_blank");

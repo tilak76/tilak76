@@ -1,6 +1,8 @@
 import React from "react";
 import "./../styles/Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+
 import matchme from "../assets/matchme.png"
 import fitnesspro from "../assets/fitness_pro.png"
 import smarthome from "../assets/smarthome.png"
@@ -9,13 +11,15 @@ import auramarket from "../assets/aura_market.png"
 export default function Projects() {
   const projects = [
     {
-      title: "Match Maker",
+      title: "Soul Connection",
       desc: "A full-stack matchmaking web application that helps users find compatible partners based on their preferences. It includes both frontend and backend integration.",
       tech: "React, Node.js, Express.js, MongoDB (Full Stack Application)",
       github: "https://github.com/techravi552/matchMekarme",
-      netlify: "https://magenta-florentine-9b2c7f.netlify.app/",
+      netlify: "https://soulcoonection.netlify.app",
       img: matchme
     },
+
+
     {
       title: "Fitness Pro",
       desc: "A comprehensive fitness tracking application that allows users to manage workouts, track progress, and stay healthy with a modern dashboard.",
