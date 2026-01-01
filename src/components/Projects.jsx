@@ -3,7 +3,7 @@ import "./../styles/Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 
-import matchme from "../assets/matchme.png"
+import soulConnectionImg from "../assets/soul_connection.png"
 import fitnesspro from "../assets/fitness_pro.png"
 import smarthome from "../assets/smarthome.png"
 import auramarket from "../assets/aura_market.png"
@@ -16,7 +16,7 @@ export default function Projects() {
       tech: "React, Node.js, Express.js, MongoDB (Full Stack Application)",
       github: "https://github.com/tilak76/matchMekarme",
       netlify: "https://soulcoonection.netlify.app",
-      img: matchme
+      img: soulConnectionImg
     },
 
 
