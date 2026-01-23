@@ -279,35 +279,38 @@
 
 /* 📱 Responsive */
 @media (max-width: 900px) {
+  .home-section {
+    padding: 80px 5% 50px;
+    flex-direction: column;
+  }
+
   .home-content {
     flex-direction: column-reverse;
-    /* Image on top usually looks better on mobile, or bottom */
     text-align: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   .home-text {
     text-align: center;
     order: 2;
-    /* Text after image */
   }
 
   .home-image img {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
 
   .home-image {
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .home-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .home-role {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     justify-content: center;
   }
 
@@ -318,8 +321,15 @@
   .social-links {
     justify-content: center;
   }
+}
 
-  .home-section {
-    padding: 100px 5% 50px;
+@media (max-width: 400px) {
+  .home-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
   }
 }

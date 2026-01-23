@@ -128,7 +128,23 @@
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 5% 40px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1.8rem;
   }
 }

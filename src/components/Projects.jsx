@@ -7,9 +7,18 @@ import soulConnectionImg from "../assets/soul_connection_ultra.jpg"
 import fitnesspro from "../assets/fitness_pro.png"
 import smarthome from "../assets/smarthome.png"
 import auramarket from "../assets/aura_market.png"
+import naturesPledgeImg from "../assets/natures_pledge.jpg"
 
 export default function Projects() {
   const projects = [
+    {
+      title: "Nature's Pledge",
+      desc: "An environmental conservation initiative encouraging users to take a pledge for a greener planet. Features a clean UI and commitment tracking.",
+      tech: "React, Vite, Razorpay, Netlify",
+      github: "https://github.com/tilak76/Nature-s-pledge",
+      netlify: "https://naturespledge.netlify.app",
+      img: naturesPledgeImg,
+    },
     {
       title: "Soul Connection",
       desc: "A full-stack matchmaking web application that helps users find compatible partners based on their preferences. It includes both frontend and backend integration.",
@@ -36,6 +45,7 @@ export default function Projects() {
     //   netlify: "https://strong-wisp-3efde6.netlify.app/",
     //   img: smarthome
     // },
+
     {
       title: "Aura Market",
       desc: "An advanced e-commerce platform offering a seamless shopping experience with product filtering, cart management, and secure checkout.",

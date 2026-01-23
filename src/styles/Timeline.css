@@ -177,6 +177,15 @@
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
+    .timeline-section {
+        padding: 60px 20px;
+    }
+
+    .timeline-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
     .timeline-container::after {
         left: 31px;
     }

@@ -127,6 +127,15 @@
 
 /* 📱 Responsive */
 @media (max-width: 900px) {
+  .skills-section {
+    padding: 60px 5%;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
   .skills-container {
     flex-direction: column;
     align-items: center;
