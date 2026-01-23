@@ -57,7 +57,10 @@ export default function Navbar() {
       </div>
 
       <div className="logo" onClick={() => window.scrollTo(0, 0)}>
-        TM<span>.</span>
+        <div className="logo-inner">
+          <span>T</span>
+          <span>M</span>
+        </div>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>

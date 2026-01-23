@@ -7,7 +7,7 @@ export default function Timeline() {
             year: "Dec 2024 - Present",
             title: "Full Stack Web Development",
             subtitle: "Masai School",
-            desc: "Started my intensive Full Stack Web Development journey at Masai School, mastering the MERN stack and building scalable applications.",
+            desc: "Started my Internship Full Stack Web Development journey at Masai School, mastering the MERN stack and building scalable applications.",
         },
         {
             year: "July 2023 - April 2024",

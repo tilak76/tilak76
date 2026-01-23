@@ -10,14 +10,14 @@ import Github from "./components/Github";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import VoiceNav from "./components/VoiceNav";
+
 import Preloader from "./components/Preloader";
 
 function App() {
   return (
     <>
       <Preloader />
-      <VoiceNav />
+
       <Navbar />
       <Home />
       {/* <About /> */}
